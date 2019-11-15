@@ -28,7 +28,12 @@ class ViewController: UIViewController {
         
         
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("segue")
+        
+        guard let detailViewController = segue.destination as? DetailViewController, let indexPath = tableView.indexPathForSelectedRow else { return }
+        detailViewController.title = swiftTopics[indexPath.row]
+    }
 
 }
 

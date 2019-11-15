@@ -26,6 +26,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="sqy-yr-JoD" kind="show" id="nsb-I7-5AR"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -47,6 +50,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Ks7-RX-5UL">
+            <objects>
+                <viewController id="sqy-yr-JoD" customClass="DetailViewController" customModule="TableViewWarmUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7LO-Kl-Vw6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="j8J-tc-bkg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0eP-Du-5M8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FDe-7r-WYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1823" y="117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UrN-Gk-tIW">
